@@ -1,19 +1,3 @@
-[![Build Status](https://travis-ci.org/mistaguy/ment.svg?branch=master)](https://travis-ci.org/mistaguy/ment)
-[![Code Climate](https://img.shields.io/codeclimate/maintainability/mistaguy/ment.svg?style=flat-square)](https://codeclimate.com/github/mistaguy/ment)
-[![Dependency Status](https://david-dm.org/mistaguy/ment.svg)](https://david-dm.org/mistaguy/ment)
-[![Dev Dependency Status](https://david-dm.org/mistaguy/ment.svg#info=devDependencies)](https://david-dm.org/mistaguy/ment#info=devDependencies)
-[![Known Vulnerabilities](https://snyk.io/test/github/mistaguy/ment.svg)](https://snyk.io/test/github/mistaguy/ment)
-![Node 11](https://img.shields.io/badge/node-11.5.x-green.svg)
-![Npm 6](https://img.shields.io/badge/npm-6.4.x-green.svg)
-![Webpack 5](https://img.shields.io/badge/webpack-5.20.2-green.svg)
-[![codecov](https://codecov.io/gh/mistaguy/ment/branch/master/graph/badge.svg)](https://codecov.io/gh/mistaguy/ment)
-[![Coverage Status](https://coveralls.io/repos/github/mistaguy/ment/badge.svg?branch=master)](https://coveralls.io/github/mistaguy/ment?branch=master)
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/mistaguy/ment/issues)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![code style: Tslint Latest](https://img.shields.io/badge/tslint_rules-latest-ff69b4.svg?style=flat-square)](https://github.com/buzinas/tslint-eslint-rules)
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmistaguy%2Fment.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmistaguy%2Fment?ref=badge_shield)
-[![Apache License, Version 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](http://opensource.org/licenses/Apache-2.0)
-
 # MENT
 A backend boilerplate for MongoDB  ExpressJs Typscript NodeJs App
 
