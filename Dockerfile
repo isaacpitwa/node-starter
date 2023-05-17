@@ -13,7 +13,6 @@ RUN npm i
 # Copy the rest of the project files
 COPY . .
 
-RUN npm 
 # Build the TypeScript code
 RUN npm run build
 
