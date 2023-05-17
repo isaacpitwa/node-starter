@@ -8,11 +8,12 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install project dependencies
-RUN npm ci --production
+RUN npm i 
 
 # Copy the rest of the project files
 COPY . .
 
+RUN npm 
 # Build the TypeScript code
 RUN npm run build
 
@@ -27,7 +28,7 @@ COPY --from=build /app/package*.json ./
 COPY --from=build /app/dist ./dist
 
 # Install production dependencies
-RUN npm ci --production
+RUN npm i 
 
 # Expose the port your Node.js app listens on
 EXPOSE 3000
