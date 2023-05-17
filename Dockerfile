@@ -33,4 +33,4 @@ RUN npm i
 EXPOSE 3000
 
 # Start the Node.js application
-CMD [ "node", "./dist/server.js" ]
+CMD ["npm", "start"]
