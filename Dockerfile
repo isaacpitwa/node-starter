@@ -14,7 +14,7 @@ RUN npm i
 COPY . .
 
 # Build the TypeScript code
-RUN npm run build
+RUN npm run build:release
 
 # Use a new base image without the build dependencies
 FROM node:14

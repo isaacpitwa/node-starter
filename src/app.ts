@@ -4,15 +4,18 @@ import * as dotenv from "dotenv";
 import * as morgan from "morgan";
 import * as http from "http";
 
-import database from "./config/database";
+import { Database } from "./config/database";
 import winston, { logger } from "./config/winston";
 import { Api } from "./api";
+import { RabbitMQ } from "./config/rabbitMQ";
 
 export class App {
     public express!: express.Application;
     public api: Api = new Api();
     public session!: express.RequestHandler;
     public server!: http.Server;
+    public rabbitMQ: RabbitMQ =  new RabbitMQ(); 
+    private db: Database = new Database();
 
     constructor() {
         try {
@@ -20,7 +23,8 @@ export class App {
             // if (process.env.NODE_ENV === 'development') console.log = () => null; // allow console
             this.express = express();
             this.config();
-            database.start();
+            this.db.start();
+            this.rabbitMQ.connect();
             this.api.routes(this);
         } catch (error) {
             logger.log("error", `App: Some weirdo error happened :( ", ${error}`);
